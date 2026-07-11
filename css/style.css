@@ -1,20 +1,57 @@
+/* General Page Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    margin-top: 80px;
 }
 
+/* Header */
+header {
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+}
+
+/* Navigation */
 nav {
-    margin: 20px 0;
+    margin-top: 15px;
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    margin: 0 10px;
-    color: #0077cc;
+    margin: 0 15px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #ff6600;
+    color: #00d4ff;
+}
+
+/* Main Content */
+main {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+}
+
+/* Card Style */
+.card {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    background-color: #1f2937;
+    color: white;
+    padding: 15px;
 }
