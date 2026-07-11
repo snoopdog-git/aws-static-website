@@ -1,21 +1,55 @@
-/* General Page Styling */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f7f9;
-    color: #333;
+/* ===========================
+   Global Styles
+=========================== */
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===========================
+   Container
+=========================== */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+header {
+    background: #1e3a8a;
+    color: white;
+    padding: 25px 0;
     text-align: center;
 }
 
-/* Header */
-header {
-    background-color: #1f2937;
-    color: white;
-    padding: 20px;
+header h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
 }
 
-/* Navigation */
+header p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
 nav {
     margin-top: 15px;
 }
@@ -23,35 +57,158 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 18px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #00d4ff;
+    color: #ffd43b;
 }
 
-/* Main Content */
-main {
-    width: 80%;
-    margin: auto;
-    padding: 30px;
+/* ===========================
+   Hero Section
+=========================== */
+
+.hero {
+    background: white;
+    text-align: center;
+    padding: 60px 20px;
 }
 
-/* Card Style */
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* ===========================
+   Button
+=========================== */
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+/* ===========================
+   Cards
+=========================== */
+
 .card {
     background: white;
-    margin: 20px auto;
-    padding: 20px;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
 }
 
-/* Footer */
-footer {
-    margin-top: 40px;
-    background-color: #1f2937;
+.card h2 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card li {
+    margin-bottom: 8px;
+}
+
+/* ===========================
+   Skills
+=========================== */
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills span {
+    display: inline-block;
+    background: #2563eb;
     color: white;
-    padding: 15px;
+    padding: 10px 18px;
+    border-radius: 20px;
+    margin: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    background: #1e40af;
+    transform: scale(1.05);
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ===========================
+   Links
+=========================== */
+
+a {
+    color: #2563eb;
+}
+
+a:hover {
+    color: #1e40af;
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: block;
+        margin: 12px 0;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .skills span {
+        display: block;
+        margin: 10px auto;
+        width: fit-content;
+    }
 }
